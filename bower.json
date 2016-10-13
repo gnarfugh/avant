@@ -1,0 +1,21 @@
+{
+  "name": "avant",
+  "homepage": "https://github.com/gnarfugh/avant",
+  "authors": [
+    "gnarfugh <kmorales076@gmail.com>"
+  ],
+  "description": "avant landing page",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
