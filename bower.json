@@ -1,13 +1,12 @@
 {
   "name": "avant",
-  "homepage": "https://github.com/gnarfugh/avant",
+  "description": "avant landing page",
+  "main": "gulp.js",
   "authors": [
     "gnarfugh <kmorales076@gmail.com>"
   ],
-  "description": "avant landing page",
-  "main": "",
-  "license": "MIT",
-  "private": true,
+  "license": "ISC",
+  "homepage": "https://github.com/gnarfugh/avant",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,7 +14,8 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "bootstrap-sass": "^3.3.7"
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery-ui": "^1.12.1"
   }
 }
