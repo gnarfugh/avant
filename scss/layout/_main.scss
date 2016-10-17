@@ -7,23 +7,24 @@
 }
 
 #loan--header {
-  padding:0;
-  margin:2em;
+  padding: 0;
+  margin: 2em;
   @include bp(xs) {
     text-align: center;
   }
-  @include bp(sm){
-  	text-align:initial;
+  @include bp(sm) {
+    text-align: initial;
   }
 }
-.loan--header-icon{
-	@include bp(sm){
-		text-align:center;
-	}
-	@include bp(md){
-		text-align:initial;
-		padding-top:2em;
-	}
+
+.loan--header-icon {
+  @include bp(sm) {
+    text-align: center;
+  }
+  @include bp(md) {
+    text-align: initial;
+    padding-top: 2em;
+  }
 }
 
 #loan--slider,
@@ -36,7 +37,7 @@
 .loan--headline {
   border-bottom: 1px solid $border;
   padding: 0;
-  margin-bottom:2em;
+  margin-bottom: 2em;
 }
 
 .loan--content {
@@ -55,12 +56,20 @@
     @include bp(md) {
       padding-top: 1.5em;
     }
+    @include bp(lg){
+    	padding-top:1em;
+    }
+  }
+  h5 {
+    font-size: 100%;
+    margin-top: 1em;
+    font-weight: 700;
   }
 }
 
 .loan--received {
   background: $green-received;
-  padding: .3em;
+  padding: .2em;
   margin: 0 auto;
   h6 {
     color: $green;
@@ -78,8 +87,17 @@
   padding: .5em;
   line-height: 10px;
 }
-.radio--container > input{
-	text-align:center;
+
+.radio--container > input {
+  text-align: center;
 }
 
+.apr {
+  &:after {
+    content: ' \f059';
+    color: $font-gray;
+    font-family: FontAwesome;
+    &:hover {}
+  }
+}
 

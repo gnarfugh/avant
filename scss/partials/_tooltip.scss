@@ -1,0 +1,42 @@
+/* Hover tooltips */
+.tool-tip {
+    position:relative;
+    cursor:help;
+}
+    .tool-tip .tip-content {
+        z-index:9999;
+        position:absolute;
+        top:-10px; /* - top padding */
+        right:9999px;
+        width:200px;
+        margin-right:-170px; /* width + left/right padding */
+        padding:10px;
+        color:$font-gray;
+        background:#fff;
+        box-shadow:2px 2px 5px #aaa;
+        opacity:0;
+        transition:opacity 250ms ease-out;
+        border-radius:5px;
+        @include bp(xs){
+            display:none;
+        }
+    }
+        /* <http://css-tricks.com/snippets/css/css-triangle/> */
+        .tool-tip .tip-content:before {
+            content:' '; /* Must have content to display */
+            position:absolute;
+            top:18px;
+            left:-16px; /* 2 x border width */
+            width:0;
+            height:0;
+            margin-top:-8px; /* - border width */
+            border:8px solid transparent;
+            border-right-color:$font-gray;
+            @include bp(xs){
+            display:none;
+        }
+        }
+        .tool-tip:hover .tip-content {
+            right:0;
+            opacity:1;
+        }

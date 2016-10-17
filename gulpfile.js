@@ -44,7 +44,6 @@ gulp.task('serve', ['scss'], function() {
 //paths to bower_components
 var PATHS = {
   javascript: [
-    'bower_components/bootstrap-sass/assets/js/bootstrap.min.js',
     'js/app.js'
   ]
 };
