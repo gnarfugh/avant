@@ -1,0 +1,30 @@
+.sidebar {
+  padding: 2em;
+  color: $font-gray;
+  blockquote {
+    border: none;
+  }
+  cite {
+    font-size:10px;
+    color:$font-cite;
+  }
+}
+
+.sidebar--top,
+.sidebar--middle {
+  border-bottom: 2px solid $border;
+}
+
+.sidebar--top,
+.sidebar--middle,
+.sidebar--bottom {
+  padding-bottom: 2em;
+  padding: 1em;
+}
+
+.sidebar--bottom{
+  p{
+  font-size: 10px;
+  }
+}
+

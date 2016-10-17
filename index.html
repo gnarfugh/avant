@@ -1,19 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link href="dist/css/app.min.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 101 Template</title>
+  <!-- Bootstrap -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="dist/css/app.min.css" rel="stylesheet">
+</head>
 
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Avant</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-7 col-sm-offset-1 main">
+        <section id="loan--header">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-2 loan--header-icon">
+              <i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 loan--header-text">
+              <h3>Congrats! You've been pre-approved for up to $8,000 from WebBank.</h3>
+            </div>
+          </div>
+        </section>
+        <section id="loan--slider">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 loan--headline">
+              <h5>Drag to choose a loan amount</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 range-slider">
+              <div id="range" class="cntr"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="loan--content">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-5 col-md-3">
+                    <i class="fa fa-money fa-2x" aria-hidden="true"></i>
+                    <h6>Principal Loan Amount</h6>
+                    <div id="loan-amount"></div>
+                    <p>The principal loan amount that you agree to pay back</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-2 col-md-1">
+                    <h3>-</h3>
+                  </div>
+                  <div class="col-xs-12 col-sm-5 col-md-3">
+                    <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                    <h6>Administration Fee</h6>
+                    <h4>$260</h4>
+                    <p>This fee is non-refundable and is deducted from the Principal Loan Amount when the loan is funded</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-1">
+                    <h3>=</h3>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-3">
+                    <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                    <div class="loan--received">
+                      <h6>Amount Received</h6>
+                      <div id="loan-received"></div>
+                    </div>
+                    <p>The amount that will be deposited</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="loan--options">
+          <div class="row">
+            <div class="col-sm-12 loan--headline">
+              <h5>Which option meets your needs?</h5>
+            </div>
+          </div>
+          <div class="row options">
+            <div class="col-xs-12 col-sm-12 option">
+              <div class="row">
+                <div class="col-xs-12 col-sm-2 radio--container">
+                  <input type="radio" name="radio" id="radio1" value="option1" checked>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                  <h6>Term</h6>
+                  <h6>36</h6>
+                  <small>months</small>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                  <h6>Payments</h6>
+                  <h6>$285.67</h6>
+                  <small>per month</small>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                  <h6>APR</h6>
+                  <h6>35.95%</h6>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                  <h6>Interest Rate</h6>
+                  <h6>32.33%</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 option">
+              <div class="row">
+                <div class="col-xs-12 col-sm-2 radio--container">
+                  <input type="radio" name="radio" id="radio2" value="option2">
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                  <h6>Term</h6>
+                  <h6>48</h6>
+                  <small>months</small>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                  <h6>Payments</h6>
+                  <h6>$285.67</h6>
+                  <small>per month</small>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                  <h6>APR</h6>
+                  <h6>34.57%</h6>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                  <h6>Interest Rate</h6>
+                  <h6>32.33%</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="loan--agreement">
+          <div class="row">
+            <div class="col-xs-12 col-sm-2">
+              <img src="http://placehold.it/50x50">
+            </div>
+            <div class="col-xs-12 col-sm-7 col-sm-offset-1">
+              <button class="btn btn--agreement">
+                Continue To Agreement
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="hidden-xs col-sm-4 sidebar">
+        <section class="sidebar--top">
+          <div class="row flex-parent">
+            <div class="col-sm-4 flex-item">
+              <img src="http://placehold.it/50x50">
+            </div>
+            <div class="col-sm-8">
+              <h5>Security &amp; privacy are #1</h5>
+              <p>We use 256-bit SSL protection and strict, high levels of security &amp; encryption standards.</p>
+            </div>
+          </div>
+        </section>
+        <section class="sidebar--middle">
+          <div class="row flex-parent">
+            <div class="col-sm-4 flex-item">
+              <img src="http://placehold.it/50x50">
+            </div>
+            <div class="col-sm-8">
+              <h5>Questions? We can help</h5>
+              <p>Call us at <a href="tel:8557527008">855-752-7008.</a></p>
+            </div>
+          </div>
+        </section>
+        <section class="sidebar--bottom">
+          <h5>Testimonials</h5>
+          <blockquote>
+            <p>I loved working with Avant, they were always there to help me. I nreally needed the money and got it quickly, thanks!</p>
+            <cite>
+              - Jane K, Chicago, IL
+            </cite>
+          </blockquote>
+          <img src="http://placehold.it/75x50">
+        </section>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-sm-offset-1">
+          <h6>Important information about procedures for opening a new account:</h6>
+          <p>To help the government fight the funding of terrorism and money laundering activities, Federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account. What this means for you: When you open an account, we will ask for your name, address, date of birth, and other information that will allow us to identify you. We may also ask to see your driver’s license or other identifying documents.
+          </p>
+          <p>
+            *Amazon.com is not a sponsor of this promotion. Except as required by law, Amazon.com Gift Cards ("GCs") cannot be transferred for value or redeemed for cash. GCs may be used only for purchases of eligible goods at Amazon.com or certain of its affiliated websites. For complete terms and conditions, see <a href="www.amazon.com/gc-legal" target="_blank" alt="amazon">www.amazon.com/gc-legal</a>. GCs are issued by ACI Gift Cards, Inc., a Washington corporation. All Amazon ® ,™ &amp; © are IP of Amazon.com, Inc. or its affiliates. No expiration date or service fees.
+          </p>
+          <p>Copyright 2015 Avant, Inc. All rights reserved. Need help? <a href="tel:8007125407">800-712-5407</a>
+          </p>
+        </div>
+      </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="/dist/js/app.min.js"></script>
+</body>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/dist/app.min.js"></script>
-  </body>
 </html>

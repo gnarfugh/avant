@@ -1,0 +1,85 @@
+.main {
+  background: $main;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.10);
+  height: 100%;
+  border-radius: 0 0 5px 5px;
+  padding: 3em;
+}
+
+#loan--header {
+  padding:0;
+  margin:2em;
+  @include bp(xs) {
+    text-align: center;
+  }
+  @include bp(sm){
+  	text-align:initial;
+  }
+}
+.loan--header-icon{
+	@include bp(sm){
+		text-align:center;
+	}
+	@include bp(md){
+		text-align:initial;
+		padding-top:2em;
+	}
+}
+
+#loan--slider,
+#loan--options,
+#loan--agreement {
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.loan--headline {
+  border-bottom: 1px solid $border;
+  padding: 0;
+  margin-bottom:2em;
+}
+
+.loan--content {
+  background: $bg;
+  padding: 2em;
+  @include bp(sm) {
+    text-align: center;
+  }
+  h3 {
+    color: $green;
+    margin-bottom: 20px;
+    @include bp(sm) {
+      margin-bottom: 10px;
+      padding-top: 1em;
+    }
+    @include bp(md) {
+      padding-top: 1.5em;
+    }
+  }
+}
+
+.loan--received {
+  background: $green-received;
+  padding: .3em;
+  margin: 0 auto;
+  h6 {
+    color: $green;
+  }
+}
+
+#loan--options {
+  border-bottom: 1px solid $border;
+}
+
+.option {
+  border: 1px solid $border;
+  border-radius: 5px;
+  margin: .5em auto;
+  padding: .5em;
+  line-height: 10px;
+}
+.radio--container > input{
+	text-align:center;
+}
+
+

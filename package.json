@@ -22,7 +22,8 @@
     "gulp-scss-lint": "^0.4.0",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.7.3",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^1.0.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

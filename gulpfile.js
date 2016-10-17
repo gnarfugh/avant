@@ -12,28 +12,13 @@ var gulp = require('gulp'),
   scsslint = require('gulp-scss-lint'),
   prefix = require('gulp-autoprefixer'),
   sourcemaps = require('gulp-sourcemaps'),
+  uncss = require('gulp-uncss'),
   browserSync = require('browser-sync').create();
 
 var config = {
   bootstrapDir: './bower_components/bootstrap-sass',
   publicDir: './public',
 };
-
-// gulp.task('css', function() {
-//   return gulp.src('./style/app.scss')
-//     .pipe(sass({
-//       includePaths: [config.bootstrapDir + '/assets/stylesheets'],
-//     }))
-//     .pipe(gulp.dest(config.publicDir + '/dist'));
-// });
-
-// gulp.task('fonts', function() {
-//   return gulp.src(config.bootstrapDir + '/assets/fonts/**/*')
-//     .pipe(gulp.dest(config.publicDir + '/fonts'));
-// });
-
-// gulp.task('default', ['css', 'fonts']);
-
 
 //Clean dist folder for each build
 gulp.task('clean', function(done) {
@@ -60,17 +45,14 @@ gulp.task('serve', ['scss'], function() {
 var PATHS = {
   javascript: [
     'bower_components/bootstrap-sass/assets/js/bootstrap.min.js',
-    'bower_components/jquery/dist/jquery.min.js',
-    'bower_components/jquery-ui/jquery-ui.min.js',
     'js/app.js'
   ]
 };
 
-//lint scss
-gulp.task('scss-lint', function() {
-  gulp.src('scss/**/*.scss')
-    .pipe(scsslint());
-});
+// gulp.task('scss-lint', function() {
+//   gulp.src('scss/**/*.scss')
+//     .pipe(scsslint());
+// });
 
 //throw error if scss breaks
 gulp.task('scss', function() {
@@ -94,6 +76,9 @@ gulp.task('scss', function() {
       browsers: ['last 2 versions', '>5%', 'ie >= 9']
     }))
     .pipe(gulp.dest('css'))
+    // .pipe(uncss({
+    //         html: ['index.html']
+    //     }))
     .pipe(nano())
     .pipe(rename({ suffix: '.min' }))
     .pipe(size({ gzip: true, showFiles: true }))

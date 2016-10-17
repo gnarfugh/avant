@@ -1,0 +1,16 @@
+.navbar{
+	background:$nav;
+	height:60px;
+	top:0;
+	color:#fff;
+	border-radius:0;
+	margin-bottom:0;
+	@include bp(xs){
+		text-align:center;
+	}
+	.navbar-brand {
+		text-shadow:none;
+		color:#fff;
+	}
+}
+
