@@ -56,8 +56,8 @@
     @include bp(md) {
       padding-top: 1.5em;
     }
-    @include bp(lg){
-    	padding-top:1em;
+    @include bp(lg) {
+      padding-top: 1em;
     }
   }
   h5 {
@@ -80,16 +80,21 @@
   border-bottom: 1px solid $border;
 }
 
-.option {
+.loan--option {
   border: 1px solid $border;
   border-radius: 5px;
   margin: .5em auto;
   padding: .5em;
   line-height: 10px;
+  @include bp(xs) {
+    flex-direction: column;
+  }
 }
 
-.radio--container > input {
-  text-align: center;
+.highlight {
+  background: $highlight;
+  border: 1px solid $highlight-border;
+  transition: all .5s ease;
 }
 
 .apr {

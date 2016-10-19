@@ -20,4 +20,18 @@
   $('#loan-received').html('<h4>' + '$1' + '</h4>');
 }.call(this));
 
+$('input[type="radio"]').change(function() {
+  var option1 = $('#loanOption1'),
+    option2 = $('#loanOption2');
 
+  if ($('#radio1').is(':checked')) {
+    option1.addClass('highlight');
+  } else {
+    option1.removeClass('highlight');
+  }
+  if ($('#radio2').is(':checked')) {
+    option2.addClass('highlight');
+  } else {
+    option2.removeClass('highlight');
+  }
+});

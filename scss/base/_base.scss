@@ -1,37 +1,38 @@
 /**  end of bootstrap grid **/
+
 html,
- body {
-   width:100%;
-   margin: 0;
-   padding: 0;
-   overflow:auto;
-   overflow-x:hidden;
-   overflow-scrolling: touch;
- }
-html{
-	background:$bg;
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-scrolling: touch;
+}
+
+html {
+  background: $bg;
 }
 
 body {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   background: $bg;
-  margin:0 auto;
-  font-size:100%;
-  color:$font-gray;
-  @include bp(xs){
-  	text-align:center;
+  margin: 0 auto;
+  font-size: 100%;
+  color: $font-gray;
+  @include bp(xs) {
+    text-align: center;
   }
 }
 
 .flex-parent {
-  display:flex;
+  display: flex;
 }
 
 .flex-item {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 

@@ -2326,7 +2326,7 @@ body {
   /* - top padding */
   right: 9999px;
   width: 200px;
-  margin-right: -170px;
+  margin-right: -200px;
   /* width + left/right padding */
   padding: 10px;
   color: #515E65;
@@ -2433,15 +2433,24 @@ body {
 #loan--options {
   border-bottom: 1px solid #DBE4E8; }
 
-.option {
+.loan--option {
   border: 1px solid #DBE4E8;
   border-radius: 5px;
   margin: .5em auto;
   padding: .5em;
   line-height: 10px; }
+  @media (max-width: 767px) {
+    .loan--option {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
-.radio--container > input {
-  text-align: center; }
+.highlight {
+  background: #EBF6FF;
+  border: 1px solid #5298DC;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
 
 .apr:after {
   content: ' \f059';
